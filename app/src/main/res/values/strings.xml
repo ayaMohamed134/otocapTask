@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cv Maker</string>
+    <string name="ok">حسنا</string>
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+    <string name="download_app">يمكنك تحميل التطبيق من اللينك التالى: </string>
+    <string name="empty_phone">من فضلك . يجب ان تكتب رقم الهاتف</string>
+    <string name="empty_pwd">من فضلك يجب ان تكتب كلمة المرور</string>
+    <string name="password_lenght">كلمة المرور يجب ان تكون اكبر من 8</string>
+    <string name="password_confirm">يجب ادخال نفس كلمة المرور</string>
+    <string name="empty_email">من فضلك ادخل البريد الالكتروني </string>
+    <string name="invalid_email">من فضلك ادخل بريد صحيح</string>
+    <string name="empty_field">يجب ادخال القيمة صحيحة</string>
+    <string name="tags"><![CDATA[\\<.*?\\>]]></string>
+    <string name="white_space"><![CDATA[]]></string>
+
+</resources>

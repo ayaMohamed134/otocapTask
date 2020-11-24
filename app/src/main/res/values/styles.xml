@@ -1,0 +1,122 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimaryVariant">@android:color/white</item>
+        <item name="colorError">#F44336</item>
+        <item name="colorOnError">#F44336</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@android:color/transparent</item>
+    </style>
+
+    <color name="background">@android:color/transparent</color>
+
+    <style name="TextAppearance.Text.Extra.Thin" parent="android:TextAppearance">
+
+    </style>
+
+
+    <style name="TextAppearance.Text.Regular" parent="android:TextAppearance">
+
+    </style>
+
+    <style name="TextAppearance.Text.Light" parent="android:TextAppearance">
+
+    </style>
+
+    <style name="TextAppearance.Text.Medium" parent="android:TextAppearance">
+
+    </style>
+
+    <style name="TextAppearance.Text.SemiBold" parent="android:TextAppearance">
+
+    </style>
+
+    <style name="TextAppearance.Text.Bold" parent="android:TextAppearance">
+
+    </style>
+
+    <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--Any text styling can be done here-->
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Toolbar" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/_40sdp</item>
+        <!-- navigation icon color -->
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:colorControlNormal" tools:ignore="NewApi">@color/white</item>
+        <!-- color of the menu overflow icon -->
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="EndCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.End</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.End" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_30sdp</item>
+        <item name="cornerSizeTopLeft">@dimen/_30sdp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">@dimen/_30sdp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="StartCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Start</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Start" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_30sdp</item>
+        <item name="cornerSizeTopLeft">@dimen/_30sdp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">@dimen/_30sdp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="TextAppearance.Text.Tab" parent="android:TextAppearance">
+
+        <item name="android:textSize">@dimen/_7ssp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="ButtonRotation" parent="Widget.AppCompat.ImageButton"></style>
+
+    <style name="ImageRotation" parent=""></style>
+
+    <style name="ArrowButtonRotation" parent="Widget.AppCompat.ImageButton">
+        <item name="android:rotationY">180</item>
+    </style>
+
+    <style name="RoundedImage" parent="">
+        <item name="riv_corner_radius_top_right">@dimen/_30sdp</item>
+        <item name="riv_corner_radius_bottom_left">@dimen/_30sdp</item>
+        <item name="riv_corner_radius_top_left">@dimen/_30sdp</item>
+        <item name="riv_corner_radius_bottom_right">0dp</item>
+    </style>
+
+    <style name="MainRoundedImage" parent="">
+        <item name="riv_corner_radius_top_right">@dimen/_30sdp</item>
+        <item name="riv_corner_radius_bottom_left">0dp</item>
+        <item name="riv_corner_radius_top_left">@dimen/_30sdp</item>
+        <item name="riv_corner_radius_bottom_right">@dimen/_30sdp</item>
+    </style>
+</resources>

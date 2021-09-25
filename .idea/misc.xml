@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.11944444444444445" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/drawable/ic_destination_location.xml" value="0.11944444444444445" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/drawable/ic_hamburger.xml" value="0.2796296296296296" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/drawable/ic_home_location.xml" value="0.11944444444444445" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/drawable/ic_location.xml" value="0.11944444444444445" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/drawable/rounded_blue_color.xml" value="0.32916666666666666" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/drawable/rounded_grey_color.xml" value="0.1287037037037037" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/drawable/splash_screen_bg.xml" value="0.1267924573931589" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/drawable/white_circle.xml" value="0.10462962962962963" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/layout/activity_main.xml" value="0.1408514492753623" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/layout/fragment_list_of_locations.xml" value="0.2264151024877837" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/layout/fragment_map.xml" value="0.2264151024877837" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/layout/list_item.xml" value="0.3070652173913043" />
+        <entry key="..\:/StudioProjects/OtocabTask/app/src/main/res/layout/source_item.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

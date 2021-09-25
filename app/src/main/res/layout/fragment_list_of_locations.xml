@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.otocabTask.ui.views.map.listOfLocations.ListOfLocationsViewModel" />
+
+    </data>
+    <!-- UI layout it's root elements -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.views.map.MapFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.03" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.97" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_top_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_grey_color"
+                android:layoutDirection="ltr"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btn_back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/white_circle"
+                    android:scaleType="centerInside"
+                    android:padding="@dimen/_5sdp"
+                    app:srcCompat="@drawable/ic_right_arrow"
+                    android:rotationY="180" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_your_location"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                    app:boxStrokeColor="@android:color/white"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.Text.Extra.Thin"
+                    app:hintTextColor="@color/text_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_your_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/your_location"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:textAlignment="viewStart"
+                        android:textAppearance="@style/TextAppearance.Text.Regular"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="@dimen/_12ssp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_your_destination"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                    app:boxStrokeColor="@android:color/white"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.Text.Extra.Thin"
+                    app:hintTextColor="@color/text_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_your_destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/your_destination"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:textAlignment="viewStart"
+                        android:textAppearance="@style/TextAppearance.Text.Regular"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="@dimen/_12ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_locations"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/ll_top_view"
+                app:layout_constraintStart_toEndOf="@id/start"
+                app:layout_constraintEnd_toStartOf="@id/end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:listitem="@layout/source_item"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_20sdp"
+                android:text="@string/no_results"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/ll_top_view"
+                app:layout_constraintStart_toEndOf="@id/start"
+                app:layout_constraintEnd_toStartOf="@id/end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layoutDirection="ltr"
+            android:visibility="@{viewModel.isLoading ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:indicatorColor="@color/blue"
+                app:indicatorName="BallPulseIndicator" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

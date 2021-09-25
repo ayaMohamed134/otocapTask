@@ -12,6 +12,10 @@
         <item name="colorOnBackground">@android:color/transparent</item>
     </style>
 
+    <style name="SplashScreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_bg</item>
+    </style>
+
     <color name="background">@android:color/transparent</color>
 
     <style name="TextAppearance.Text.Extra.Thin" parent="android:TextAppearance">

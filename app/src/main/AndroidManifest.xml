@@ -1,22 +1,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.cvmaker">
+    package="com.otocabTask">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".constants.AppController"
+        android:theme="@style/SplashScreenTheme"
+        android:name="com.otocabTask.constants.AppController"
         tools:replace="android:allowBackup">
 
         <activity
-            android:name="com.cvmaker.ui.views.Splash"
+            android:name="com.otocabTask.ui.views.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,6 +25,13 @@
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCg2CQdiVebf-RdCd967b-wF1F2B7fUZAI" />
 
     </application>
 

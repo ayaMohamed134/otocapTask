@@ -1,20 +1,21 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt' //Must include
 apply plugin: 'androidx.navigation.safeargs'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.cvmaker"
+        applicationId "com.otocaptask"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -44,7 +45,6 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-        incremental true
     }
 
     packagingOptions {
@@ -134,5 +134,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // task
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    // Firebase UI
+    implementation 'com.firebaseui:firebase-ui-firestore:8.0.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
 
 }

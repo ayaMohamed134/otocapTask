@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cv Maker</string>
+    <string name="app_name">Otocap Task</string>
     <string name="ok">حسنا</string>
     <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
     <string name="app_market_link">"market://details?id="</string>
@@ -13,5 +13,9 @@
     <string name="empty_field">يجب ادخال القيمة صحيحة</string>
     <string name="tags"><![CDATA[\\<.*?\\>]]></string>
     <string name="white_space"><![CDATA[]]></string>
+    <string name="your_location">Your location</string>
+    <string name="your_destination">Destination</string>
+    <string name="request_rd">Request RD</string>
+    <string name="no_results">No results</string>
 
 </resources>
